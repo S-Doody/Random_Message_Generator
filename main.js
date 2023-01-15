@@ -50,6 +50,45 @@ let randTwoThousandsRock = randElement(songQuotes.twoThousands.Rock);
 let randTwoThousandsPop = randElement(songQuotes.twoThousands.Pop);
 let randTwoThousandsHipHop = randElement(songQuotes.twoThousands.hipHop);
 
-
+//Quote generator function
+const quote = (D, G) => {
+  if (D === '80s') {
+    if (G === 'Rock') {
+      return randEightiesRock;
+    }
+    if (G === 'Pop') {
+      return randEightiesPop;
+    }
+    if (G === 'Hip-hop') {
+      return randEightiesHipHop;
+    }
+  }
+  if (D === '90s') {
+    if (G === 'Rock') {
+      return randNinetiesRock;
+    }
+    if (G === 'Pop') {
+      return randNinetiesPop;
+    }
+    if (G === 'Hip-hop') {
+      return randNinetiesHipHop;
+    }
+  }
+  if (D === '2000s') {
+    if (G === 'Rock') {
+      return randTwoThousandsRock;
+    }
+    if (G === 'Pop') {
+      return randTwoThousandsPop;
+    }
+    if (G === 'Hip-hop') {
+      return randTwoThousandsHipHop;
+    }
+  }
+ };
+  
+ //Print Decade Genre Quote
+ console.log(`${randDecade} ${randGenre}: ${quote(randDecade, randGenre)}`);
+ 
 
 
