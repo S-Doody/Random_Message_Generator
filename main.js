@@ -30,5 +30,26 @@ const songQuotes = {
  
 };
 
+//Random Decade and Random Genre Functions
+let randDecade = randElement(decadeArr);
+ 
+let randGenre = randElement(genreArr);
+
+//80s quote generator variables
+let randEightiesRock = randElement(songQuotes.Eighties.Rock);
+let randEightiesPop = randElement(songQuotes.Eighties.Pop);
+let randEightiesHipHop = randElement(songQuotes.Eighties.hipHop);
+ 
+//90s quote generator variables
+let randNinetiesRock = randElement(songQuotes.Nineties.Rock);
+let randNinetiesPop = randElement(songQuotes.Nineties.Pop);
+let randNinetiesHipHop = randElement(songQuotes.Nineties.hipHop);
+ 
+//2000s quote generator variables
+let randTwoThousandsRock = randElement(songQuotes.twoThousands.Rock);
+let randTwoThousandsPop = randElement(songQuotes.twoThousands.Pop);
+let randTwoThousandsHipHop = randElement(songQuotes.twoThousands.hipHop);
+
+
 
 
